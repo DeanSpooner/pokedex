@@ -37,4 +37,4 @@ To run the Storybook locally, clone down this repo, then in your terminal, run t
 A local instance will now run on [http://localhost:6006].
 <img src="./public/storybook.png" alt="Storybook screenshot"/>
 
-# By [Dean Spooner](https://github.com./DeanSpooner) <img src="./public/pokeball.gif" alt="Pokéball GIF" width=32px/>
+# By [Dean Spooner](https://github.com./DeanSpooner) <img src="./public/pokeball.gif" alt="Pokéball GIF" width="32px"/>
