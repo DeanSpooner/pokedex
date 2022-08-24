@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "../shared/shared.styles.js";
+import * as React from "react";
+import { PokemonGrid } from "../PokemonGrid/PokemonGrid";
 import {
   ChildContainer,
   MainContainer,
@@ -14,8 +14,9 @@ const Layout = () => {
         <Title>Dean's Pokédex</Title>
       </ChildContainer>
       <MainContainer>
-        <ChildContainer>Choose your Pokémon!</ChildContainer>
-        <ChildContainer isMain>Pokémon description</ChildContainer>
+        <ChildContainer>
+          <PokemonGrid></PokemonGrid>
+        </ChildContainer>
       </MainContainer>
       <ChildContainer>By Dean Spooner</ChildContainer>
     </ParentContainer>
