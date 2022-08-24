@@ -13,9 +13,9 @@ const handleColor = (elementType) => {
     case "fairy":
       return "background: #da67e3; color: #000;";
     case "fighting":
-      return "background: #2b180c; color: #fff;";
+      return "background: #661012; color: #fff;";
     case "fire":
-      return "background: #f8410a; color: #000;";
+      return "background: #f8410a; color: #fff;";
     case "ghost":
       return "background: #140765; color: #fff;";
     case "grass":

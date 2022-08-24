@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 import { MonsterButton, PokemonImg } from "./PokemonButton.styles";
 
-export const PokemonButton: React.FC<Props> = ({
+const PokemonButton: React.FC<Props> = ({
   dexNumber,
   pokeName,
   spritePath,

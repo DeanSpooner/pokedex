@@ -5,7 +5,7 @@ import { GridWrapper } from "./PokemonGrid.styles";
 import PokemonButton from "../PokemonButton/PokemonButton";
 import axios from "axios";
 
-export const PokemonGrid: React.FC<Props> = ({ region }) => {
+const PokemonGrid: React.FC<Props> = ({ region }) => {
   const [pokemon, setPokemon] = useState([]);
 
   const fetchPokemon = async () => {

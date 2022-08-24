@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Pokédex Project - by [Dean Spooner](https://github.com./DeanSpooner)
 
-## Getting Started
+This is a simple site that uses the [PokéAPI](https://pokeapi.co/), a RESTful Pokémon API, to display information about different Pokémon.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This project was built using:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- React;
+- Next.js;
+- TypeScript;
+- Storybook.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Running the site locally
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To run the site locally, clone down this repo, then in your terminal, run the following commands:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+`npm install`<br>
+`npm run dev`
 
-## Learn More
+A local instance will now run on [http://localhost:3000].
 
-To learn more about Next.js, take a look at the following resources:
+### Static-site generation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The Pokémon detail pages of the Kanto Pokédex are created using the static-site generation feature of Next.js; these pages can be seen by navigating through the Kanto Pokédex, or using the route `/pokemon/[pokemonId]`, with pokemonIds from 1 to 151 available to view.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Server-side rendering
 
-## Deploy on Vercel
+The Pokémon detail pages of the Johto Pokédex are created using the server-side rendering feature of Next.js; these pages can be seen by navigating through the Johto Pokédex, or using the route `/newerpokemon/[pokemonId]`, using any Pokémon's ID number to view.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Running Storybook locally
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To run the Storybook locally, clone down this repo, then in your terminal, run the following commands:
+
+`yarn storybook`
+
+A local instance will now run on [http://localhost:6006].
+<img src="./public/storybook.png" alt="Storybook screenshot"/>
+
+# By [Dean Spooner](https://github.com./DeanSpooner) <img src="./public/pokeball.gif" alt="Pokéball GIF" width=32px/>
