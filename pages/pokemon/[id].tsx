@@ -5,7 +5,7 @@ import React from "react";
 import PokemonType from "../../src/components/PokemonType/PokemonType";
 import { Props } from "./types";
 
-export const Pokemon: React.FC<Props> = ({ pokemon }) => {
+const Pokemon: React.FC<Props> = ({ pokemon }) => {
   const router = useRouter();
 
   const { id } = router.query;

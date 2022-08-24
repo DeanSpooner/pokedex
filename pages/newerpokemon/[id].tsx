@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { Props } from "./types";
 
-export const NewerPokemon: React.FC<Props> = ({ pokemon }) => {
+const NewerPokemon: React.FC<Props> = ({ pokemon }) => {
   const router = useRouter();
 
   const { id } = router.query;
