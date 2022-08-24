@@ -18,7 +18,7 @@ To run the site locally, clone down this repo, then in your terminal, run the fo
 `npm install`<br>
 `npm run dev`
 
-A local instance will now run on [http://localhost:3000].
+A local instance will now run on [http://localhost:3000](http://localhost:3000).
 
 ### Static-site generation
 
@@ -34,7 +34,7 @@ To run the Storybook locally, clone down this repo, then in your terminal, run t
 
 `yarn storybook`
 
-A local instance will now run on [http://localhost:6006].
+A local instance will now run on [http://localhost:6006](http://localhost:6006).
 <img src="./public/storybook.png" alt="Storybook screenshot"/>
 
 # By [Dean Spooner](https://github.com./DeanSpooner) <img src="./public/pokeball.gif" alt="Pokéball GIF" width="32px"/>
