@@ -1,13 +1,20 @@
 import * as React from "react";
-import { PokemonGrid } from "../PokemonGrid/PokemonGrid";
+import { useRouter, Router } from "next/router";
 import {
   ChildContainer,
   MainContainer,
   ParentContainer,
   Title,
 } from "./Layout.styles.js";
+import Link from "next/link";
 
 const Layout = () => {
+  const router = useRouter();
+
+  const clickHandler = (region: string) => {
+    router.push(`/${region}`);
+  };
+
   return (
     <ParentContainer>
       <ChildContainer isTitle>
@@ -15,10 +22,17 @@ const Layout = () => {
       </ChildContainer>
       <MainContainer>
         <ChildContainer>
-          <PokemonGrid></PokemonGrid>
+          <Link href="/pokemon">
+            <a>Kanto</a>
+          </Link>
+        </ChildContainer>
+        <ChildContainer>
+          <Link href="/newerpokemon">
+            <a>Johto</a>
+          </Link>
         </ChildContainer>
       </MainContainer>
-      <ChildContainer>By Dean Spooner</ChildContainer>
+      <ChildContainer isFooter>By Dean Spooner</ChildContainer>
     </ParentContainer>
   );
 };

@@ -27,4 +27,5 @@ export const ChildContainer = styled.div`
   border-radius: 10px;
   border: ${(props) => (props.isTitle ? "none" : "10px solid #f5cc8b")};
   flex-grow: ${(props) => (props.isMain ? 1 : 0)};
+  width: ${(props) => (props.isFooter || props.isTitle ? "94%" : "50%")};
 `;

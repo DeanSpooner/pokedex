@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Props } from "./types";
+import { useRouter } from "next/router";
 
 import { MonsterButton, PokemonImg } from "./PokemonButton.styles";
 
@@ -8,8 +9,16 @@ export const PokemonButton: React.FC<Props> = ({
   pokeName,
   spritePath,
 }) => {
+  const router = useRouter();
+
+  const clickHandler = () => {
+    router.push(
+      dexNumber < 152 ? `/pokemon/${dexNumber}` : `/newerpokemon/${dexNumber}`
+    );
+  };
+
   return (
-    <MonsterButton>
+    <MonsterButton onClick={clickHandler}>
       <>
         {spritePath && <PokemonImg src={spritePath} />}#{dexNumber}: {pokeName}
       </>

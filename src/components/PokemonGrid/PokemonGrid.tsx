@@ -5,19 +5,26 @@ import { GridWrapper } from "./PokemonGrid.styles";
 import PokemonButton from "../PokemonButton/PokemonButton";
 import axios from "axios";
 
-export const PokemonGrid: React.FC<Props> = () => {
+export const PokemonGrid: React.FC<Props> = ({ region }) => {
   const [pokemon, setPokemon] = useState([]);
 
   const fetchPokemon = async () => {
-    const result = await axios("https://pokeapi.co/api/v2/pokemon?limit=151");
+    const result = await axios(
+      region === "kanto"
+        ? "https://pokeapi.co/api/v2/pokemon?limit=151"
+        : "https://pokeapi.co/api/v2/pokemon?limit=100&offset=151"
+    );
 
     await setPokemon(result.data.results);
-    await console.log({ pokemon });
   };
 
-  function capitalizeFirstLetter(string: string) {
+  const capitalizeFirstLetter = (string: string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
-  }
+  };
+
+  const correctDexNum = (index: number) => {
+    return region === "kanto" ? index + 1 : index + 152;
+  };
 
   useEffect(() => {
     fetchPokemon();
@@ -28,10 +35,10 @@ export const PokemonGrid: React.FC<Props> = () => {
       {pokemon.map((monster, index) => (
         <PokemonButton
           pokeName={capitalizeFirstLetter(monster?.name)}
-          dexNumber={index + 1}
-          spritePath={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
-            index + 1
-          }.png`}
+          dexNumber={correctDexNum(index)}
+          spritePath={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${correctDexNum(
+            index
+          )}.png`}
         />
       ))}
     </GridWrapper>
