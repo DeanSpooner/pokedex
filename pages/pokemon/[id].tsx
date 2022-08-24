@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import React from "react";
+import PokemonType from "../../src/components/PokemonType/PokemonType";
 import { Props } from "./types";
 
 export const Pokemon: React.FC<Props> = ({ pokemon }) => {
@@ -22,6 +23,12 @@ export const Pokemon: React.FC<Props> = ({ pokemon }) => {
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`}
         alt={`${pokemon.name} artwork`}
       />
+      <p>
+        Types:{" "}
+        {pokemon.types.map((type) => (
+          <PokemonType elementType={type.type.name} />
+        ))}
+      </p>
     </>
   );
 };
