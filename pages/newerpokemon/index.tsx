@@ -9,7 +9,7 @@ const NewPokemonList = () => {
         <title>Johto Pokédex</title>
       </Head>
       <div>
-        <PokemonGrid region="johto"></PokemonGrid>
+        <PokemonGrid region="johto" />
       </div>
     </>
   );

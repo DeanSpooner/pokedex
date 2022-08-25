@@ -16,6 +16,8 @@ const handleColor = (elementType) => {
       return "background: #661012; color: #fff;";
     case "fire":
       return "background: #f8410a; color: #fff;";
+    case "flying":
+      return "background: #7ba4e3; color: #fff;";
     case "ghost":
       return "background: #140765; color: #fff;";
     case "grass":
@@ -33,7 +35,7 @@ const handleColor = (elementType) => {
     case "rock":
       return "background: #974913; color: #fff;";
     case "steel":
-      return "background: #272727; color: #000;";
+      return "background: #272727; color: #fff;";
     case "water":
       return "background: #03a9f3; color: #000;";
   }

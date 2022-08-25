@@ -9,7 +9,7 @@ const PokemonList = () => {
         <title>Kanto Pokédex</title>
       </Head>
       <div>
-        <PokemonGrid region={"kanto"}></PokemonGrid>
+        <PokemonGrid region={"kanto"} />
       </div>
     </>
   );

@@ -1,20 +1,13 @@
 import * as React from "react";
-import { useRouter, Router } from "next/router";
+import Link from "next/link";
 import {
   ChildContainer,
   MainContainer,
   ParentContainer,
   Title,
 } from "./Layout.styles.js";
-import Link from "next/link";
 
 const Layout = () => {
-  const router = useRouter();
-
-  const clickHandler = (region: string) => {
-    router.push(`/${region}`);
-  };
-
   return (
     <ParentContainer>
       <ChildContainer isTitle>

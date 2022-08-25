@@ -7,6 +7,7 @@ import axios from "axios";
 
 const PokemonGrid: React.FC<Props> = ({ region }) => {
   const [pokemon, setPokemon] = useState([]);
+  const [filter, setFilter] = useState("");
 
   const fetchPokemon = async () => {
     const result = await axios(
@@ -15,15 +16,22 @@ const PokemonGrid: React.FC<Props> = ({ region }) => {
         : "https://pokeapi.co/api/v2/pokemon?limit=100&offset=151"
     );
 
-    await setPokemon(result.data.results);
+    const pokemonResults = await result.data.results.map(
+      (obj: Object, index: number) => ({
+        ...obj,
+        dexNumber: region === "kanto" ? index + 1 : index + 152,
+      })
+    );
+
+    await setPokemon(pokemonResults);
   };
 
   const capitalizeFirstLetter = (string: string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
-  const correctDexNum = (index: number) => {
-    return region === "kanto" ? index + 1 : index + 152;
+  const changeHandler = (event: { target: { value: string } }) => {
+    setFilter(event.target.value);
   };
 
   useEffect(() => {
@@ -32,15 +40,20 @@ const PokemonGrid: React.FC<Props> = ({ region }) => {
 
   return (
     <GridWrapper>
-      {pokemon.map((monster, index) => (
-        <PokemonButton
-          pokeName={capitalizeFirstLetter(monster?.name)}
-          dexNumber={correctDexNum(index)}
-          spritePath={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${correctDexNum(
-            index
-          )}.png`}
-        />
-      ))}
+      <input onChange={changeHandler} />
+      {pokemon
+        .filter(
+          (pokemon) =>
+            pokemon.name.includes(filter) ||
+            pokemon.dexNumber.toString().includes(filter)
+        )
+        .map((monster) => (
+          <PokemonButton
+            pokeName={capitalizeFirstLetter(monster?.name)}
+            dexNumber={monster?.dexNumber}
+            spritePath={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${monster?.dexNumber}.png`}
+          />
+        ))}
     </GridWrapper>
   );
 };
