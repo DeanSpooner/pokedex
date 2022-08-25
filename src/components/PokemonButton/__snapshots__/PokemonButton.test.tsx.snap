@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonsterButton matches snapshot 1`] = `
+<button
+  class="PokemonButtonstyles__MonsterButton-sc-18altu4-0 gRLgdG"
+  data-testid="MonsterButton"
+>
+  <img
+    class="PokemonButtonstyles__PokemonImg-sc-18altu4-1 cmJZMa"
+    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+  />
+  #
+  25
+  : 
+  Pikachu
+</button>
+`;

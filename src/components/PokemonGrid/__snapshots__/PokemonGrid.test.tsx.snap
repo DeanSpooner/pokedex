@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonGrid matches snapshot 1`] = `
+<div
+  class="PokemonGridstyles__GridWrapper-sc-1x2xoh6-0 hLUJOy"
+  data-testid="PokemonGrid"
+>
+  <input />
+</div>
+`;

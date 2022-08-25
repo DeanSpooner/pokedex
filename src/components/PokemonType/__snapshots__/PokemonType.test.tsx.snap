@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonType matches snapshot 1`] = `
+<div
+  class="PokemonTypestyles__MonsterType-sc-1b3gn2z-0 jpSZRX"
+  data-testid="PokemonType"
+>
+  <p>
+    FIRE
+  </p>
+</div>
+`;

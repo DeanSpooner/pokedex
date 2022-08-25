@@ -18,7 +18,7 @@ const PokemonButton: React.FC<Props> = ({
   };
 
   return (
-    <MonsterButton onClick={clickHandler}>
+    <MonsterButton onClick={clickHandler} data-testid="MonsterButton">
       <>
         {spritePath && <PokemonImg src={spritePath} />}#{dexNumber}: {pokeName}
       </>

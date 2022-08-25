@@ -39,7 +39,7 @@ const PokemonGrid: React.FC<Props> = ({ region }) => {
   }, []);
 
   return (
-    <GridWrapper>
+    <GridWrapper data-testid="PokemonGrid">
       <input onChange={changeHandler} />
       {pokemon
         .filter(

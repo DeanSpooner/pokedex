@@ -9,7 +9,7 @@ const PokemonDetails: React.FC<Props> = ({ pokemon, id }) => {
   };
 
   return (
-    <>
+    <div data-testid="PokemonDetails">
       <h1>
         This is Pokémon #{id}, {capitalizeFirstLetter(pokemon.name)}
       </h1>
@@ -26,7 +26,7 @@ const PokemonDetails: React.FC<Props> = ({ pokemon, id }) => {
           <PokemonType elementType={type.type.name} />
         ))}
       </p>
-    </>
+    </div>
   );
 };
 

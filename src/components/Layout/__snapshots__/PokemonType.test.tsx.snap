@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout matches snapshot 1`] = `
+<div
+  class="Layoutstyles__ParentContainer-sc-3a4sff-1 gJOuOp"
+  data-testid="Layout"
+>
+  <div
+    class="Layoutstyles__ChildContainer-sc-3a4sff-3 kHwKUm"
+  >
+    <h1
+      class="Layoutstyles__Title-sc-3a4sff-0"
+    >
+      Dean's Pokédex
+    </h1>
+  </div>
+  <div
+    class="Layoutstyles__MainContainer-sc-3a4sff-2 fnmlQn"
+  >
+    <div
+      class="Layoutstyles__ChildContainer-sc-3a4sff-3 jdoyEl"
+    >
+      <a
+        href="/pokemon"
+      >
+        Kanto
+      </a>
+    </div>
+    <div
+      class="Layoutstyles__ChildContainer-sc-3a4sff-3 jdoyEl"
+    >
+      <a
+        href="/newerpokemon"
+      >
+        Johto
+      </a>
+    </div>
+  </div>
+  <div
+    class="Layoutstyles__ChildContainer-sc-3a4sff-3 jdnCdp"
+  >
+    By Dean Spooner
+  </div>
+</div>
+`;

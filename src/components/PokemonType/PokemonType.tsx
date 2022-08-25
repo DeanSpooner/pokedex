@@ -5,7 +5,7 @@ import { MonsterType } from "./PokemonType.styles";
 
 const PokemonType: React.FC<Props> = ({ elementType }) => {
   return (
-    <MonsterType elementType={elementType}>
+    <MonsterType elementType={elementType} data-testid="PokemonType">
       <p>{elementType && elementType.toUpperCase()}</p>
     </MonsterType>
   );
