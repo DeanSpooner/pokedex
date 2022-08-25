@@ -44,10 +44,11 @@ const handleColor = (elementType) => {
 export const MonsterType = styled.div`
   ${(props) => handleColor(props.elementType)};
   text-align: center;
-  border: solid #fff 5px;
-  border-radius: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  border: solid #000 8px;
+  border-radius: 24px;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
+  font-weight: 700;
   margin: 4px;
   padding: 4px;
   display: inline-block;

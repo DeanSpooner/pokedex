@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 export const MonsterButton = styled.button`
   align-items: center;
@@ -8,6 +9,7 @@ export const MonsterButton = styled.button`
   width: 150px;
   height: 150px;
   font-size: 16px;
+  font-family: "Open Sans", sans-serif;
   margin: 6px;
   :hover {
     background-color: lightgreen;

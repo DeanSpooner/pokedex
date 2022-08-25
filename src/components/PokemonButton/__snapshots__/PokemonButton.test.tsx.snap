@@ -2,7 +2,7 @@
 
 exports[`MonsterButton matches snapshot 1`] = `
 <button
-  class="PokemonButtonstyles__MonsterButton-sc-18altu4-0 gRLgdG"
+  class="PokemonButtonstyles__MonsterButton-sc-18altu4-0 fNXgFF"
   data-testid="MonsterButton"
 >
   <img

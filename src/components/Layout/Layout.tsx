@@ -6,26 +6,43 @@ import {
   ParentContainer,
   Title,
 } from "./Layout.styles.js";
+import Image from "next/image.js";
 
-const Layout = () => {
+interface Props {}
+
+const Layout: React.FC<Props> = () => {
   return (
     <ParentContainer data-testid="Layout">
       <ChildContainer isTitle>
         <Title>Dean's Pokédex</Title>
       </ChildContainer>
       <MainContainer>
-        <ChildContainer>
-          <Link href="/pokemon">
-            <a>Kanto</a>
-          </Link>
+        <ChildContainer isKanto>
+          <Image
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Math.floor(
+              Math.random() * 151
+            )}.png`}
+            width="240px"
+            height="240px"
+          />
+          <Link href="/pokemon">Kanto Dex - powered by SSG!</Link>
         </ChildContainer>
-        <ChildContainer>
-          <Link href="/newerpokemon">
-            <a>Johto</a>
-          </Link>
+        <ChildContainer isJohto>
+          <Image
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
+              Math.floor(Math.random() * 100) + 151
+            }.png`}
+            width="240px"
+            height="240px"
+          />
+          <Link href="/newerpokemon">Johto Dex - powered by SSR!</Link>
         </ChildContainer>
       </MainContainer>
-      <ChildContainer isFooter>By Dean Spooner</ChildContainer>
+      <ChildContainer isFooter>
+        <a href="https://github.com/DeanSpooner" target="_blank">
+          By Dean Spooner
+        </a>
+      </ChildContainer>
     </ParentContainer>
   );
 };

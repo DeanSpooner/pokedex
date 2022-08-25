@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import { Props } from "./types";
-import { GridWrapper } from "./PokemonGrid.styles";
+import { GridWrapper, PokemonSearch } from "./PokemonGrid.styles";
 import PokemonButton from "../PokemonButton/PokemonButton";
 import axios from "axios";
 
@@ -31,7 +31,7 @@ const PokemonGrid: React.FC<Props> = ({ region }) => {
   };
 
   const changeHandler = (event: { target: { value: string } }) => {
-    setFilter(event.target.value);
+    setFilter(event.target.value.toLowerCase());
   };
 
   useEffect(() => {
@@ -40,7 +40,11 @@ const PokemonGrid: React.FC<Props> = ({ region }) => {
 
   return (
     <GridWrapper data-testid="PokemonGrid">
-      <input onChange={changeHandler} />
+      <PokemonSearch
+        onChange={changeHandler}
+        type="text"
+        placeholder="Search for a Pokémon name or Dex number!"
+      />
       {pokemon
         .filter(
           (pokemon) =>

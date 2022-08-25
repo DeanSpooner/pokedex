@@ -2,9 +2,13 @@
 
 exports[`PokemonGrid matches snapshot 1`] = `
 <div
-  class="PokemonGridstyles__GridWrapper-sc-1x2xoh6-0 hLUJOy"
+  class="PokemonGridstyles__GridWrapper-sc-1x2xoh6-0 fPNQOF"
   data-testid="PokemonGrid"
 >
-  <input />
+  <input
+    class="PokemonGridstyles__PokemonSearch-sc-1x2xoh6-1 fAmQoN"
+    placeholder="Search for a Pokémon name or Dex number!"
+    type="text"
+  />
 </div>
 `;
