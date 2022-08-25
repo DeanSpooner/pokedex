@@ -9,7 +9,8 @@ This project was built using:
 - React;
 - Next.js;
 - TypeScript;
-- Storybook.
+- Storybook;
+- Jest.
 
 ## Running the site locally
 
@@ -36,5 +37,13 @@ To run the Storybook locally, clone down this repo, then in your terminal, run t
 
 A local instance will now run on [http://localhost:6006](http://localhost:6006).
 <img src="./public/storybook.png" alt="Storybook screenshot"/>
+
+## Running tests locally
+
+To run the tests locally, clone down this repo, then in your terminal, run the following command:
+
+`npm test`
+
+The test suites will now run from your local repo.
 
 # By [Dean Spooner](https://github.com./DeanSpooner) <img src="./public/pokeball.gif" alt="Pokéball GIF" width="32px"/>
