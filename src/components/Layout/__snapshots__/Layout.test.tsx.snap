@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout matches snapshot 1`] = `
+exports[`Layout should render with no data 1`] = `
 <div
   class="Layoutstyles__ParentContainer-sc-3a4sff-1 gJOuOp"
   data-testid="Layout"

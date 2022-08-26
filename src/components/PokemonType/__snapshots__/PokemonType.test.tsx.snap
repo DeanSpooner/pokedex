@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PokemonType matches snapshot 1`] = `
+exports[`PokemonType should render with no data 1`] = `
 <div
   class="PokemonTypestyles__MonsterType-sc-1b3gn2z-0 kqIhVQ"
   data-testid="PokemonType"

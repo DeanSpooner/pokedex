@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PokemonDetails matches snapshot 1`] = `
+exports[`PokemonDetails should render with data 1`] = `
 <div
   class="PokemonDetailsstyles__PokemonDetailsWrapper-sc-vr58es-0 lcFgPG"
   data-testid="PokemonDetails"
@@ -61,14 +61,14 @@ exports[`PokemonDetails matches snapshot 1`] = `
     class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 ehenFM"
   >
     Height: 
-    NaN
+    0.7
     m
   </p>
   <p
     class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 ehenFM"
   >
     Weight: 
-    NaN
+    6.9
     kg
   </p>
 </div>

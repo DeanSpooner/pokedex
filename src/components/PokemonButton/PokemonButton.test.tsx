@@ -5,7 +5,7 @@ import { render } from "@testing-library/react";
 import PokemonButton from "./PokemonButton";
 
 describe("MonsterButton", () => {
-  it("matches snapshot", () => {
+  it("should render with data", () => {
     const { getByTestId } = render(
       <PokemonButton
         pokeName={"Pikachu"}

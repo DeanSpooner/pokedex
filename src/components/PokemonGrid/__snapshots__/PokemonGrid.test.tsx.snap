@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PokemonGrid matches snapshot 1`] = `
+exports[`PokemonGrid should render with data 1`] = `
 <div
   class="PokemonGridstyles__GridWrapper-sc-1x2xoh6-0 fPNQOF"
   data-testid="PokemonGrid"

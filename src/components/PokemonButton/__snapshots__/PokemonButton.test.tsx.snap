@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MonsterButton matches snapshot 1`] = `
+exports[`MonsterButton should render with data 1`] = `
 <button
   class="PokemonButtonstyles__MonsterButton-sc-18altu4-0 evYutp"
   data-testid="MonsterButton"
