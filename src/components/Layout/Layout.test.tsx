@@ -23,7 +23,7 @@ describe("NumberGenerator", () => {
     expect(result).toBeLessThan(152);
   });
 
-  it("should return a number greater than 151 and less than 252 if the passed region is 'johto'", () => {
+  it("should return a number greater than 151 and less than 252 if the passed region is not 'kanto'", () => {
     const result = NumberGenerator("johto");
     expect(result).toBeGreaterThan(151);
     expect(result).toBeLessThan(252);
