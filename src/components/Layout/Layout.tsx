@@ -12,9 +12,9 @@ interface Props {}
 
 export const NumberGenerator = (region: string) => {
   if (region === "kanto") {
-    return Math.floor(Math.random() * 151);
+    return Math.floor(Math.random() * 151) + 1;
   }
-  return Math.floor(Math.random() * 100) + 151;
+  return Math.floor(Math.random() * 100) + 152;
 };
 
 const Layout: React.FC<Props> = () => {
