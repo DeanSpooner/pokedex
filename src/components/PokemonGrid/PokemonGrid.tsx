@@ -27,11 +27,11 @@ const PokemonGrid: React.FC<Props> = ({ region }) => {
   };
 
   const capitalizeFirstLetter = (string: string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+    return string?.charAt(0)?.toUpperCase() + string?.slice(1);
   };
 
   const changeHandler = (event: { target: { value: string } }) => {
-    setFilter(event.target.value.toLowerCase());
+    setFilter(event?.target?.value?.toLowerCase());
   };
 
   useEffect(() => {
@@ -48,8 +48,8 @@ const PokemonGrid: React.FC<Props> = ({ region }) => {
       {pokemon
         .filter(
           (pokemon) =>
-            pokemon.name.includes(filter) ||
-            pokemon.dexNumber.toString().includes(filter)
+            pokemon?.name?.includes(filter) ||
+            pokemon?.dexNumber?.toString()?.includes(filter)
         )
         .map((monster) => (
           <PokemonButton

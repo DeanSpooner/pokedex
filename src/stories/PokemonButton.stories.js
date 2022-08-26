@@ -45,7 +45,7 @@ export const Template = (args) => (
     <PokemonButton
       dexNumber={handleDexNumber(args)}
       spritePath={handleSprite(args)}
-      pokeName={"Pikachu"}
+      pokeName={"Squirtle"}
       {...args}
     />
   </>

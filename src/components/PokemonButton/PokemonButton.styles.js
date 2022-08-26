@@ -6,8 +6,8 @@ export const MonsterButton = styled.button`
   grid-column: auto;
   background-color: lightgray;
   border-radius: 12px;
-  width: 150px;
-  height: 150px;
+  width: 155px;
+  height: 155px;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   margin: 6px;
