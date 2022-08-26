@@ -10,6 +10,13 @@ import Image from "next/image.js";
 
 interface Props {}
 
+export const NumberGenerator = (region: string) => {
+  if (region === "kanto") {
+    return Math.floor(Math.random() * 151);
+  }
+  return Math.floor(Math.random() * 100) + 151;
+};
+
 const Layout: React.FC<Props> = () => {
   return (
     <ParentContainer data-testid="Layout">
@@ -19,8 +26,8 @@ const Layout: React.FC<Props> = () => {
       <MainContainer>
         <ChildContainer isKanto>
           <Image
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${Math.floor(
-              Math.random() * 151
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${NumberGenerator(
+              "kanto"
             )}.png`}
             width="240px"
             height="240px"
@@ -29,9 +36,9 @@ const Layout: React.FC<Props> = () => {
         </ChildContainer>
         <ChildContainer isJohto>
           <Image
-            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
-              Math.floor(Math.random() * 100) + 151
-            }.png`}
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${NumberGenerator(
+              "johto"
+            )}.png`}
             width="240px"
             height="240px"
           />
