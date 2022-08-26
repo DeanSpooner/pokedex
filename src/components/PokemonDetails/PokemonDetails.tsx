@@ -29,7 +29,7 @@ const PokemonDetails: React.FC<Props> = ({ pokemon, id }) => {
       <PokemonDetailText>
         Types:{" "}
         {pokemon?.types?.map((type) => (
-          <PokemonType elementType={type?.type?.name} />
+          <PokemonType elementType={type?.type?.name} key={type?.type?.name} />
         ))}
       </PokemonDetailText>
       <PokemonDetailText>

@@ -53,7 +53,9 @@ export const PokemonImageWrapper = styled.div`
   width: 240px;
 `;
 
-export const PokemonDetailText = styled.p`
+export const PokemonDetailText = styled.span`
+  display: block;
   font-size: 24px;
   font-weight: 500;
+  margin: 16px;
 `;

@@ -37,8 +37,8 @@ exports[`PokemonDetails should render with data 1`] = `
       <noscript />
     </span>
   </div>
-  <p
-    class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 ehenFM"
+  <span
+    class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 gPvLQO"
   >
     Types:
      
@@ -46,30 +46,28 @@ exports[`PokemonDetails should render with data 1`] = `
       class="PokemonTypestyles__MonsterType-sc-1b3gn2z-0 LISUX"
       data-testid="PokemonType"
     >
-      <p>
-        GRASS
-      </p>
+      GRASS
     </div>
-  </p>
-  <p
-    class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 ehenFM"
+  </span>
+  <span
+    class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 gPvLQO"
   >
     Base experience: 
     64
-  </p>
-  <p
-    class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 ehenFM"
+  </span>
+  <span
+    class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 gPvLQO"
   >
     Height: 
     0.7
     m
-  </p>
-  <p
-    class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 ehenFM"
+  </span>
+  <span
+    class="PokemonDetailsstyles__PokemonDetailText-sc-vr58es-2 gPvLQO"
   >
     Weight: 
     6.9
     kg
-  </p>
+  </span>
 </div>
 `;
